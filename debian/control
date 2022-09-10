@@ -1,0 +1,16 @@
+Source: lc3as
+Section: devel
+Priority: optional
+Maintainer: Brandon Whitehead <tricksterguy87@gmail.com>
+Build-Depends: cmake, debhelper (>=11~), liblc3-dev
+Standards-Version: 4.1.4
+Homepage: https://github.com/complx-tools/lc3as
+Vcs-Git: https://github.com/complx-tools/lc3as.git
+
+Package: lc3as
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: LC-3 Assembler frontend based off liblc3.
